@@ -1,5 +1,6 @@
 import { InfiniteSlider } from '@/components/motion-primitives/infinite-slider'
 import { ProgressiveBlur } from '@/components/ui/progressive-blur'
+import Image from "next/image"
 
 export default function LogoCloud() {
   const logos = [
@@ -24,13 +25,13 @@ export default function LogoCloud() {
             <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
               {repeatedLogos.map((logo, index) => (
                 <div key={index} className="flex">
-                  <img
+                  <Image
                     className="mx-auto w-fit dark:invert"
                     src={logo.src}
                     alt={`${logo.alt} Logo`}
                     height={logo.height}
-                    width="auto"
-                    style={{ height: `${logo.height}px` }}
+                    width={100}
+                    style={{ height: `${logo.height}px`, width: 'auto' }}
                   />
                 </div>
               ))}

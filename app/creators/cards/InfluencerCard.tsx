@@ -22,13 +22,11 @@ interface InfluencerCardProps {
 export default function InfluencerCard({
   id,
   name,
-  role,
   profileImg,
   authorImage,
   rating,
   author,
   videoSrc,
-  index,
   isActive,
   onPlay,
 }: InfluencerCardProps) {

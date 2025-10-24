@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { InfiniteSlider } from "./motion-primitives/infinite-slider";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Button } from "./ui/button";
+
 
 function CreatorsMarquee() {
   return (

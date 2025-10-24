@@ -3,7 +3,6 @@ import Hero from "./hero/page";
 import OurCreators from "@/components/creators";
 import ReusableSection from "@/components/ReusableSection";
 import ContentCreators from "@/components/content-creators";
-import Clients from "@/components/clients";
 import Link from "next/link";
 import PricingComparator from "@/components/pricing-comparator";
 

@@ -52,7 +52,7 @@ export default function ContentCard() {
                       For eCom brands
                     </CardTitle>
                     <CardDescription className="text-black text-md font-lato max-w-xs text-center">
-                      Selling products online? Access UGC Panda's vast network of creators
+                      Selling products online? Access UGC Panda&apos;s vast network of creators
                       and quickly create high-performing video ads that showcase your
                       products and drive results.
                     </CardDescription>
@@ -106,7 +106,7 @@ export default function ContentCard() {
                       For apps
                     </CardTitle>
                     <CardDescription className="text-black text-md font-lato max-w-xs text-center">
-                      Selling products online? Access UGC Panda's vast network of creators
+                      Selling products online? Access UGC Panda&apos;s vast network of creators
                       and quickly create high-performing video ads that showcase your
                       products and drive results.
                     </CardDescription>
