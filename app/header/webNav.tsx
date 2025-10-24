@@ -187,17 +187,17 @@ function WebNav() {
   );
 }
 
-function ListItem({ title, children, href }: { title: string; href: string; children: React.ReactNode }) {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <Link href={href} className="block rounded-md p-2 ">
-          <div className="text-sm font-medium text-gray-900">{title}</div>
-          <p className="text-sm text-gray-500 line-clamp-2">{children}</p>
-        </Link>
-      </NavigationMenuLink>
-    </li>
-  );
-}
+// function ListItem({ title, children, href }: { title: string; href: string; children: React.ReactNode }) {
+//   return (
+//     <li>
+//       <NavigationMenuLink asChild>
+//         <Link href={href} className="block rounded-md p-2 ">
+//           <div className="text-sm font-medium text-gray-900">{title}</div>
+//           <p className="text-sm text-gray-500 line-clamp-2">{children}</p>
+//         </Link>
+//       </NavigationMenuLink>
+//     </li>
+//   );
+// }
 
 export default WebNav;
