@@ -210,7 +210,7 @@ function MobileMenu() {
             {/* Other Links */}
             {[
               { href: "/prices", label: "Prices" },
-              { href: "/blogs", label: "Blogs" },
+              // { href: "/blogs", label: "Blogs" },
               { href: "/creators", label: "Creators" },
               { href: "https://calendly.com/", label: "Book A Call" },
               { href: "/contactus", label: "Contact Us" },

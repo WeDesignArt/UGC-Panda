@@ -171,7 +171,7 @@ function WebNav() {
         
         {[
           { name: "Prices", href: "/prices" },
-          { name: "Blogs", href: "/blogs" },
+          // { name: "Blogs", href: "/blogs" },
           { name: "Creators", href: "/creators" },
           { name: "Book A Call", href: "https://calendly.com/" },
           { name: "Contact Us", href: "/contactus" },
