@@ -1,16 +1,15 @@
 "use client";
+
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationLink,
-  // PaginationPrevious,
-  // PaginationNext,
 } from "@/components/ui/pagination";
 
-export default function PaginationWrapper({
+function PaginationContentWrapper({
   totalPages,
   currentPage,
   onPageChange,
@@ -22,7 +21,6 @@ export default function PaginationWrapper({
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  // ✅ Scroll to top on page change
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage]);
@@ -34,7 +32,6 @@ export default function PaginationWrapper({
   const handlePageChange = (page: number) => {
     onPageChange(page);
 
-    // ✅ Update URL without reloading the page
     const params = new URLSearchParams(searchParams.toString());
     params.set("page", page.toString());
     router.push(`?${params.toString()}`);
@@ -43,16 +40,6 @@ export default function PaginationWrapper({
   return (
     <Pagination className="mt-8">
       <PaginationContent>
-        {/* <PaginationItem>
-          <PaginationPrevious
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              if (currentPage > 1) handlePageChange(currentPage - 1);
-            }}
-          />
-        </PaginationItem> */}
-
         {pages.map((page) => (
           <PaginationItem key={page}>
             <PaginationLink
@@ -68,17 +55,19 @@ export default function PaginationWrapper({
             </PaginationLink>
           </PaginationItem>
         ))}
-
-        {/* <PaginationItem>
-          <PaginationNext
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              if (currentPage < totalPages) handlePageChange(currentPage + 1);
-            }}
-          />
-        </PaginationItem> */}
       </PaginationContent>
     </Pagination>
+  );
+}
+
+export default function PaginationWrapper(props: {
+  totalPages: number;
+  currentPage: number;
+  onPageChange: (page: number) => void;
+}) {
+  return (
+    <Suspense fallback={<div>Loading pagination...</div>}>
+      <PaginationContentWrapper {...props} />
+    </Suspense>
   );
 }
