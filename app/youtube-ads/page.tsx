@@ -35,7 +35,7 @@ function Youtube() {
         //    through content that feels authentic, relatable, and culturally
         //    relevant. From Riyadh to Cairo to Dubai, we’re creating space
         //    for real people to inspire real impact."
-        imageSrc="/hero-Youtube.png"
+        imageSrc="/hero-youtube.png"
         imageAlt="UGC Panda"
         blurTopLeft
 
