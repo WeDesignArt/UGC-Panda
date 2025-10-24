@@ -60,7 +60,7 @@ function Snapchat() {
                    through content that feels authentic, relatable, and culturally
                    relevant. From Riyadh to Cairo to Dubai, we’re creating space
                    for real people to inspire real impact."
-        imageSrc="/talk.png"
+        imageSrc="/us.png"
         imageAlt="UGC Panda"
         blurTopRight
 
