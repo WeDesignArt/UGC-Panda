@@ -6,15 +6,15 @@ interface SidebarProps {
 export default function Sidebar({ selectedCategory, setSelectedCategory }: SidebarProps) {
   const categories = [
     "All",
-    "💪 Health & Wellness",
-    "💄 Cosmetic & Beauty",
-    "👗 Apparel & Fashion",
-    "📱 Apps & Digital Services",
-    "🍔 Food & Beverages",
-    "🐶 Pets",
-    "👨‍👩‍👧 Children & Family",
-    "💻 Technology & Gadgets",
-    "🏠 Home & Lifestyle",
+    "💪  Health & Wellness",
+    "💄  Cosmetic & Beauty",
+    "👗  Apparel & Fashion",
+    "📱  Apps & Digital Services",
+    "🍔  Food & Beverages",
+    "🐶  Pets",
+    "👨‍👩‍👧  Children & Family",
+    "💻  Technology & Gadgets",
+    "🏠  Home & Lifestyle",
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function Sidebar({ selectedCategory, setSelectedCategory }: Sideb
         {categories.map((cat) => (
           <button
             key={cat}
-            onClick={() => setSelectedCategory(cat.replace(/^[^\w]+ /, ""))} // remove emoji for filtering
+            onClick={() => setSelectedCategory(cat.replace(/^[^\w]+ /, ""))} 
             className={`px-4 py-2 text-left rounded-full transition-all duration-200 ${
               selectedCategory === cat.replace(/^[^\w]+ /, "")
                 ? "bg-pink-600 text-white"
