@@ -1,9 +1,9 @@
 import ProfileDivider from "@/components/profile-divider";
 import ProfileHero from "@/components/profile-hero";
 import ProfileCard from "@/components/profile-card";
-import ProfileTestimonial from "../../components/profile-testimonials";
 import ProfilePortfolio from "@/components/profile-portfolio";
 import ProfileCategory from "@/components/profile-category";
+import PricingComparator from "@/components/pricing-comparator";
 
 export default function Profile() {
   return (
@@ -34,7 +34,7 @@ export default function Profile() {
 
       <ProfilePortfolio />
 
-      <ProfileTestimonial />
+      <PricingComparator />
     </>
   );
 }

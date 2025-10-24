@@ -21,7 +21,7 @@ export default function ProfileCard() {
           </div>
 
           <section className="grid grid-cols-1 md:grid-cols-3 py-18 md:gap-[5%] gap-8 md:px-0 px-4">
-            <Card className="relative p-[1px] gradient-main border-0 overflow-hidden transition-all shadow-none">
+            <Card className="relative p-[1.2px] gradient-main border-0 overflow-hidden transition-all shadow-none">
               <div className="rounded-xl bg-white flex w-full h-full">
                 <CardContent className="relative z-[2] min-h-52 flex flex-col gap-6 w-full p-10">
                   {/* Logo center mein */}

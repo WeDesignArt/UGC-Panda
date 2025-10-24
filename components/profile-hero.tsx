@@ -141,7 +141,7 @@ export default function ProfileHero() {
       {/* Buttons */}
       <div className="flex flex-wrap justify-center lg:gap-8 md:gap-3 gap-2 py-10 max-w-5xl">
         {buttons.map((label) => (
-          <div key={label} className="rounded-full p-[1px] gradient-main">
+          <div key={label} className="rounded-full p-[1.2px] gradient-main">
             <Button
               onClick={() => setActive(label)}
               className={`rounded-full cursor-pointer px-5 py-1 md:px-8 md:py-2 transition-all text-xs md:text-sm ${
