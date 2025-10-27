@@ -46,7 +46,7 @@ export function SignupForm({
             </h1>
 
             {/* Full Name */}
-            <div className="rounded-full p-[1.2px] bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
+            <div className="rounded-full p-[1.1px] bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
               <div className="flex items-center h-10 rounded-full bg-white px-3">
                 <input
                   type="text"
@@ -58,7 +58,7 @@ export function SignupForm({
             </div>
 
             {/* Brand Name */}
-            <div className="rounded-full p-[1.2px] bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
+            <div className="rounded-full p-[1.1px] bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
               <div className="flex items-center h-10 rounded-full bg-white px-3">
                 <input
                   type="text"
@@ -70,7 +70,7 @@ export function SignupForm({
             </div>
 
             {/* Email */}
-            <div className="rounded-full p-[1.2px] bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
+            <div className="rounded-full p-[1.1px] bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
               <div className="flex items-center h-10 rounded-full bg-white px-3">
                 <input
                   type="email"
