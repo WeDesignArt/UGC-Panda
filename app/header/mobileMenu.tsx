@@ -93,11 +93,11 @@ function MobileMenu() {
               {servicesOpen && (
                 <div className="mt-3 space-y-6 pl-3">
                   {/* By Business Type */}
-                  <div>
-                    <h4 className="text-md font-semibold mb-2">
+                  <div className="mt-5">
+                    <h4 className="text-md font-semibold mb-2 text-gray-600">
                       By Business Type
                     </h4>
-                    <ul className="space-y-2 text-gray-700">
+                    <ul className="space-y-5 mt-5 text-gray-500">
                       <li>
                         <button
                           onClick={() => handleLinkClick("/ecommerce")}
@@ -145,8 +145,8 @@ function MobileMenu() {
 
                   {/* By Platform */}
                   <div>
-                    <h4 className="text-md font-semibold mb-2">By Platform</h4>
-                    <ul className="space-y-2 text-gray-700">
+                    <h4 className="text-md font-semibold mb-2 text-gray-600">By Platform</h4>
+                    <ul className="space-y-4 mt-5 text-gray-500">
                       <li>
                         <button
                           onClick={() => handleLinkClick("/tiktok-ads")}

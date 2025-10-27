@@ -1,4 +1,5 @@
 import { RiSearchLine } from "@remixicon/react";
+import { SlidingNumberWithSlider } from "./slidingslider";
 
 export default function Sidebar() {
   const categories = [
@@ -56,8 +57,9 @@ export default function Sidebar() {
         <div>
           <h3 className="font-bold text-xl mb-2">Price Range</h3>
           <div className="border-b my-5"></div>
+          <SlidingNumberWithSlider />
 
-          {/* Inputs with $ */}
+{/*           
           <div className="flex gap-2 mb-4">
             <div className="relative w-1/2">
               <span className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-500">
@@ -82,14 +84,14 @@ export default function Sidebar() {
             </div>
           </div>
 
-          {/* Range Slider */}
+          
           <input
             type="range"
             min="0"
             max="1000"
             step="10"
             className="w-full accent-pink-500"
-          />
+          /> */}
         </div>
 
         {/* Rating */}
