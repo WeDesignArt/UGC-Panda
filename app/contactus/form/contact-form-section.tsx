@@ -36,36 +36,55 @@ export default function ContactFormSection() {
               />
             </div>
 
-            {/* Phone + Inquiry */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full px-3 py-2 border border-black rounded-lg focus:ring-2 focus:ring-[#FF0080] outline-none"
-              />
+      {/* Phone + Inquiry */}
+<div className="flex flex-col md:flex-row gap-3 md:items-end">
+  {/* Phone Field */}
+  <div className="flex-1">
+    <label className="font-medium block mb-1">Phone number</label>
+    <div className="relative">
+      <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
+        <select className="text-sm bg-transparent outline-none rounded-lg h-full">
+          <option>UAE</option>
+          <option>KSA</option>
+          <option>EGY</option>
+        </select>
+      </div>
+      <input
+        type="tel"
+        placeholder="+1 (555) 000-000"
+        required
+        className="w-full pl-[4.5rem] pr-3 py-2.5 text-sm appearance-none bg-transparent outline-none border border-black focus:ring-[#FF0080] shadow-sm rounded-lg"
+      />
+    </div>
+  </div>
 
-              {/* Inquiry Dropdown */}
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button
-                    variant="outline"
-                    className="w-full justify-between border border-black text-gray-700"
-                  >
-                    Inquiry
-                    <RiArrowDownSFill className="text-xl ml-2" /> 
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-sm">
-                  <DropdownMenuLabel>Select Inquiry Type</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>Order</DropdownMenuItem>
-                  <DropdownMenuItem>Agency Request</DropdownMenuItem>
-                  <DropdownMenuItem>Creator Inquiries</DropdownMenuItem>
-                  <DropdownMenuItem>Partnerships</DropdownMenuItem>
-                  <DropdownMenuItem>Other</DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
+  {/* Inquiry Dropdown */}
+  <div className="flex-1">
+    <label className="font-medium block mb-1">Inquiry</label>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button
+          variant="outline"
+          className="w-full justify-between border border-black text-gray-700 py-2.5 h-auto text-sm rounded-lg"
+        >
+          Select Inquiry
+          <RiArrowDownSFill className="text-xl ml-2" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent className="w-sm">
+        <DropdownMenuLabel>Select Inquiry Type</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem>Order</DropdownMenuItem>
+        <DropdownMenuItem>Agency Request</DropdownMenuItem>
+        <DropdownMenuItem>Creator Inquiries</DropdownMenuItem>
+        <DropdownMenuItem>Partnerships</DropdownMenuItem>
+        <DropdownMenuItem>Other</DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  </div>
+</div>
+
+
 
             {/* I am + I am looking for */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
