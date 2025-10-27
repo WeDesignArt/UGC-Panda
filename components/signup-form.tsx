@@ -83,7 +83,7 @@ export function SignupForm({
 
             
              {/* Password */}
-             <div className="rounded-full p-[1px] bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
+             <div className="rounded-full p-[1.1px] bg-gradient-to-r from-[#7928CA] to-[#FF0080]">
             
             <div className="relative flex items-center h-10 rounded-full bg-white px-3">
                 <button type="button" className="text-gray-400 absolute right-3 inset-y-0 my-auto active:text-gray-600"
